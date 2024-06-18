@@ -1,0 +1,23 @@
+body{
+background: black;
+margin: 0;
+}
+.icons{
+    display: flex;
+    justify-content:space-between;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+
+    
+}
+.navbar{
+    padding: 10px 70px 10px 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 145, 255);
+    height: 30px;
+    cursor: pointer; 
+
+
+}
