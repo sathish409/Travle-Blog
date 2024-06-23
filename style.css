@@ -85,6 +85,7 @@ header > div {
 ul li:hover{
   color: red;  
   font-size: large;
+  cursor: pointer;
 }
 
 /* Hero section */
@@ -203,6 +204,11 @@ article{
    padding: 32px 0;
    margin-top: 2rem;
 }
+.box button{
+    line-height: 42px;
+    width: 100px;
+   }
+    
 .box input{
     line-height: 42px;
     padding: 5px 10px;
@@ -223,4 +229,92 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+
+
+/* meadia quaries */
+
+/* @media(max-width:992px){
+    .welcome{
+        background:red;
+        width: 100%;  
+    }
+}
+@media(max-width:552px){
+    .welcome{
+        background:grey;
+        width: 100%;  
+    }
+} */
+
+/* ipad view 992px */
+@media(max-width:992px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    
+    }
+    .links{
+       display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        width: 100%;
+     
+    }
+    .links >div{
+        flex-grow: 1;
+        box-shadow: var(--shadow);
+    }
+    .articles{
+        width: 100%;
+        }
+        /* .country{
+          width: 50%;
+
+          box-shadow: var(--shadow);
+        }
+        .date{
+            width: 50%;
+            box-shadow: var(--shadow);
+        } */
+}
+
+
+/* phone view 550px */
+@media(max-width:550px){
+    .links{
+        display: flex;
+         flex-direction: column;
+         gap: 2rem;
+         width: 100%;
+      
+     }
+     article{
+        display: flex;
+        flex-direction: column;
+     }
+     .img{
+        width: 100%;
+     }
+     .description button{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+     }
+   
+   .box form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+   }
+   .box input{
+    line-height: 20px;
+   }
+   .box button{
+    line-height: 20px;
+    width: 100%;
+   }
+    
 }
