@@ -2,6 +2,9 @@ body{
 /* background: black; */
 margin: 0;
 }
+:root{
+    --shadow: -5px 5px 10px 5px grey;
+}
 .container{
     margin: auto;
    width: 80%;
@@ -106,31 +109,64 @@ ul li:hover{
 }
 
 /* latest post */
-section{
-    background: skyblue;
-}
+
 .latest{
-    border-radius: 30px;
-    border-color: black;
-    background-color: white;
+    background: url(posts.jpg);
+}
+.menu{
     display: flex;
     gap: 1rem;
-    padding: 20px;
+
 }
-.latest img{
-    width: 50%;
-    height: 50%;
-    
- }
-.posts{
+.img{
+ width: 350px;
+}
+article{
     display: flex;
-    border-radius: 30px;
+    gap: 1rem;
+    box-shadow: var(--shadow);
+    background: rgba(255, 255, 255, 0.531);
+    border-radius: 10px;
+    margin-bottom: 24px;
+    padding: 20px 16px;
+
 }
-  
-.left{
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 34%;
+
+ 
+}
+.country{
+    background: yellowgreen;
+    padding: 10px;
+}
+.date{
+    background: rgba(128, 255, 0, 0.485);
+    padding: 10px;
+}
+.description button{
+    background: blue;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: var(--shadow)
+}
+.read{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/* footer */
+.footer{
+    background: black;
+    color: white;
+    height: 15vh;
     display: flex;
     justify-content: center;
-}
-.right{
-    border-radius: 30px;
+    align-items: center;
+    padding: 20px;
 }
